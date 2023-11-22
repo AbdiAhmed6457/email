@@ -45,7 +45,7 @@ app.post("/", function(req, res) {
 
   axios(options)
     .then(function(response) {
-    //   console.log(response.data);
+      console.log(response.data);
       res.sendFile(__dirname + "/success.html"); // Send success response to client
     })
     .catch(function(error) {
