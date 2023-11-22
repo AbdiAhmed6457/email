@@ -35,7 +35,7 @@ app.post("/", function(req, res) {
     url: url,
     auth: {
       username: "abdi",
-      password: "9e9dbe78dc77c3e573d3678cb05ab49e-us21"
+      password: "6c6c1cc29f41bcf53ae451fd5360bf75-us21"
     },
     headers: {
       "Content-Type": "application/json"
@@ -58,9 +58,12 @@ app.post("/failure", function(req, res){
     res.redirect("/")
 })
 
-app.listen(3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("The server is listening on port 3000...");
 });
+
+//6c6c1cc29f41bcf53ae451fd5360bf75-us21
+//bb5e9ac431
 
 
 
